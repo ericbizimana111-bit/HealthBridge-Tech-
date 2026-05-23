@@ -1,0 +1,298 @@
+// ─── DOCTORS ───────────────────────────────────────────────────────
+export const doctors = [
+    {
+        id: 1,
+        name: "Dr. Amara Nwosu",
+        specialty: "Mental Health & Psychiatry",
+        category: "Mental Health",
+        experience: "14 years",
+        rating: 4.9,
+        reviews: 312,
+        status: "available",
+        location: "Lagos, Nigeria",
+        languages: ["English", "Igbo"],
+        bio: "Dr. Nwosu specialises in anxiety, depression, and trauma recovery. She uses an integrative approach combining cognitive-behavioural therapy with mindfulness techniques to help patients build resilience and find lasting peace.",
+        avatar: null,
+        initials: "AN",
+        color: "#2ab8a0",
+        consultFee: "$45",
+        nextSlot: "Today, 3:00 PM",
+        tags: ["Anxiety", "Depression", "Trauma", "CBT"],
+        testimonials: [
+            { name: "Sarah M.", text: "Dr. Nwosu changed my life. Her calm approach helped me overcome years of anxiety.", rating: 5 },
+            { name: "James K.", text: "Incredibly compassionate. I finally feel understood and supported.", rating: 5 },
+            { name: "Amina T.", text: "She listens deeply and gives practical tools that actually work.", rating: 5 }
+        ]
+    },
+    {
+        id: 2,
+        name: "Dr. Carlos Mendez",
+        specialty: "Stress & Burnout Counseling",
+        category: "Stress Counseling",
+        experience: "10 years",
+        rating: 4.8,
+        reviews: 198,
+        status: "busy",
+        location: "Mexico City, Mexico",
+        languages: ["Spanish", "English"],
+        bio: "A specialist in occupational burnout and chronic stress, Dr. Mendez brings warmth and evidence-based techniques to help professionals reclaim balance in their lives.",
+        avatar: null,
+        initials: "CM",
+        color: "#1e3f6e",
+        consultFee: "$38",
+        nextSlot: "Tomorrow, 10:00 AM",
+        tags: ["Burnout", "Stress", "Work-life balance", "Mindfulness"],
+        testimonials: [
+            { name: "Priya R.", text: "Dr. Mendez helped me realise I wasn't broken — just overwhelmed. Life-changing.", rating: 5 },
+            { name: "Tom W.", text: "Clear, practical advice delivered with genuine empathy.", rating: 4 }
+        ]
+    },
+    {
+        id: 3,
+        name: "Dr. Yuki Tanaka",
+        specialty: "Family Therapy & Relationships",
+        category: "Family Therapy",
+        experience: "18 years",
+        rating: 4.9,
+        reviews: 445,
+        status: "available",
+        location: "Tokyo, Japan",
+        languages: ["Japanese", "English"],
+        bio: "Dr. Tanaka has devoted her career to rebuilding family bonds and fostering healthy communication patterns. She works with couples, parents, and children using systemic family therapy approaches.",
+        avatar: null,
+        initials: "YT",
+        color: "#26b8a0",
+        consultFee: "$55",
+        nextSlot: "Today, 5:30 PM",
+        tags: ["Family Therapy", "Couples", "Parenting", "Communication"],
+        testimonials: [
+            { name: "Mike & Leila B.", text: "Our marriage is stronger than ever. Dr. Tanaka guided us through our toughest year.", rating: 5 },
+            { name: "Fatima L.", text: "She helped our whole family heal together. Cannot recommend her enough.", rating: 5 }
+        ]
+    },
+    {
+        id: 4,
+        name: "Dr. Kwame Osei",
+        specialty: "Trauma & PTSD Recovery",
+        category: "Trauma Support",
+        experience: "12 years",
+        rating: 4.7,
+        reviews: 276,
+        status: "in-session",
+        location: "Accra, Ghana",
+        languages: ["English", "Twi"],
+        bio: "With deep expertise in trauma-informed care and EMDR therapy, Dr. Osei creates a safe space for survivors to process and heal from past wounds — at their own pace.",
+        avatar: null,
+        initials: "KO",
+        color: "#0b1f3a",
+        consultFee: "$42",
+        nextSlot: "Tomorrow, 2:00 PM",
+        tags: ["PTSD", "Trauma", "EMDR", "Survivors"],
+        testimonials: [
+            { name: "Alex D.", text: "Dr. Osei's patience and expertise helped me reclaim my life after years of trauma.", rating: 5 }
+        ]
+    },
+    {
+        id: 5,
+        name: "Dr. Riya Sharma",
+        specialty: "Child & Teen Psychology",
+        category: "Teen Specialists",
+        experience: "9 years",
+        rating: 4.8,
+        reviews: 183,
+        status: "available",
+        location: "Mumbai, India",
+        languages: ["Hindi", "English", "Marathi"],
+        bio: "Dr. Sharma is passionate about supporting children and teenagers through anxiety, academic pressure, and the unique challenges of growing up in the modern world.",
+        avatar: null,
+        initials: "RS",
+        color: "#2ab8a0",
+        consultFee: "$35",
+        nextSlot: "Today, 4:00 PM",
+        tags: ["Children", "Teens", "School Anxiety", "Development"],
+        testimonials: [
+            { name: "Parent of Maya S.", text: "My daughter opens up to Dr. Sharma like no other adult. She has been transformative.", rating: 5 }
+        ]
+    },
+    {
+        id: 6,
+        name: "Dr. Elena Petrova",
+        specialty: "General Wellness & Nutrition",
+        category: "Nutrition",
+        experience: "11 years",
+        rating: 4.6,
+        reviews: 224,
+        status: "available",
+        location: "Moscow, Russia",
+        languages: ["Russian", "English"],
+        bio: "Dr. Petrova bridges the gap between physical and mental health, combining nutritional science with wellness coaching to help patients feel energised, focused, and balanced.",
+        avatar: null,
+        initials: "EP",
+        color: "#1e3f6e",
+        consultFee: "$40",
+        nextSlot: "Today, 6:00 PM",
+        tags: ["Nutrition", "Wellness", "Energy", "Holistic Health"],
+        testimonials: [
+            { name: "Claire N.", text: "My energy levels and mood have completely transformed since working with Dr. Petrova.", rating: 5 }
+        ]
+    }
+];
+
+// ─── COMMUNITY POSTS ────────────────────────────────────────────────
+export const communityPosts = [
+    {
+        id: 1,
+        author: "Healing Journey",
+        anonymous: false,
+        avatar: null,
+        initials: "HJ",
+        color: "#2ab8a0",
+        category: "Inspiration",
+        title: "Six months of therapy and I finally feel like myself again",
+        content: "I was scared to reach out. I thought it meant I was weak. But today, six months after my first session with Dr. Nwosu, I woke up and smiled for the first time in years. You are not alone. Please reach out. It truly gets better.",
+        likes: 247,
+        comments: 38,
+        time: "2 hours ago",
+        tags: ["Recovery", "Therapy", "Hope"]
+    },
+    {
+        id: 2,
+        author: "Anonymous",
+        anonymous: true,
+        avatar: null,
+        initials: "?",
+        color: "#1e3f6e",
+        category: "Support",
+        title: "Struggling with anxiety at work – anyone else?",
+        content: "Every morning I feel a tight knot in my chest before logging in. I've started breathing exercises but some days are still really hard. Would love to hear how others manage workplace anxiety.",
+        likes: 183,
+        comments: 54,
+        time: "5 hours ago",
+        tags: ["Anxiety", "Work", "Support Needed"]
+    },
+    {
+        id: 3,
+        author: "David O.",
+        anonymous: false,
+        avatar: null,
+        initials: "DO",
+        color: "#26b8a0",
+        category: "Wellness",
+        title: "Daily habit that genuinely changed my sleep",
+        content: "Fifteen minutes of gentle stretching and a cup of chamomile tea before bed. I know it sounds simple, but after three weeks I'm sleeping through the night for the first time in two years. Small habits really do add up.",
+        likes: 312,
+        comments: 61,
+        time: "1 day ago",
+        tags: ["Sleep", "Habits", "Wellness"]
+    },
+    {
+        id: 4,
+        author: "Priya N.",
+        anonymous: false,
+        avatar: null,
+        initials: "PN",
+        color: "#0b1f3a",
+        category: "Discussion",
+        title: "How do you explain mental health to older family members?",
+        content: "My parents grew up in a culture where mental health wasn't spoken about. I've been trying to explain why I see a therapist and it's been hard. Has anyone navigated this? Would love your stories.",
+        likes: 98,
+        comments: 72,
+        time: "2 days ago",
+        tags: ["Culture", "Family", "Communication"]
+    }
+];
+
+// ─── WELLNESS TIPS ───────────────────────────────────────────────────
+export const wellnessTips = [
+    { id: 1, icon: "💧", title: "Stay Hydrated", tip: "Drink at least 8 glasses of water today. Dehydration is one of the most common causes of fatigue and low mood.", category: "Physical", color: "#e6f8f5" },
+    { id: 2, icon: "🧘", title: "Two-Minute Breathing", tip: "Take a two-minute break right now. Inhale for 4 counts, hold for 4, exhale for 6. Repeat five times. Your nervous system will thank you.", category: "Mental", color: "#e8eeff" },
+    { id: 3, icon: "🚶", title: "Take a Short Walk", tip: "A 10-minute walk outside can reduce cortisol levels, improve focus, and lift your mood — no gym required.", category: "Physical", color: "#e6f8f5" },
+    { id: 4, icon: "😴", title: "Wind Down Early", tip: "Set a phone-free hour before bed tonight. Blue light disrupts melatonin production. Read, stretch, or journal instead.", category: "Sleep", color: "#f0e8ff" },
+    { id: 5, icon: "🌱", title: "One Kind Act", tip: "Doing something kind for another person activates the brain's reward centres and boosts serotonin for both of you.", category: "Emotional", color: "#fff5e6" },
+    { id: 6, icon: "🎵", title: "Listen to Music", tip: "Put on a song that lifts your spirits. Music activates the same brain regions as physical touch — it is genuinely healing.", category: "Mental", color: "#fde8f0" },
+];
+
+// ─── WELLNESS MUSIC ──────────────────────────────────────────────────
+export const musicTracks = [
+    { id: 1, title: "Morning Calm", artist: "Healing Frequencies", duration: "5:32", genre: "Ambient", mood: "Peaceful", color: "#e6f8f5", emoji: "🌅" },
+    { id: 2, title: "Deep Focus", artist: "Mind & Body", duration: "8:14", genre: "Lo-fi", mood: "Focused", color: "#e8eeff", emoji: "🎯" },
+    { id: 3, title: "Ocean Waves", artist: "Nature Sounds", duration: "10:00", genre: "Nature", mood: "Calming", color: "#dff0ff", emoji: "🌊" },
+    { id: 4, title: "Gentle Rain", artist: "Sleep Therapy", duration: "12:00", genre: "Sleep", mood: "Sleepy", color: "#f0e8ff", emoji: "🌧️" },
+    { id: 5, title: "Forest Walk", artist: "Mindfulness Co.", duration: "7:45", genre: "Nature", mood: "Grounded", color: "#e8f5e0", emoji: "🌲" },
+    { id: 6, title: "Rising Hope", artist: "Wellness Beats", duration: "4:28", genre: "Uplifting", mood: "Motivated", color: "#fff5e6", emoji: "☀️" },
+    { id: 7, title: "Still Waters", artist: "Inner Peace", duration: "9:10", genre: "Meditation", mood: "Peaceful", color: "#fde8f0", emoji: "🕊️" },
+    { id: 8, title: "Breath & Be", artist: "Mindfulness Co.", duration: "6:00", genre: "Meditation", mood: "Present", color: "#e6f8f5", emoji: "💨" },
+];
+
+// ─── STATS ───────────────────────────────────────────────────────────
+export const stats = [
+    { value: "12,000+", label: "Patients Supported" },
+    { value: "600+", label: "Healthcare Professionals" },
+    { value: "24/7", label: "Wellness Support" },
+    { value: "98%", label: "Patient Satisfaction" },
+];
+
+// ─── TESTIMONIALS ────────────────────────────────────────────────────
+export const testimonials = [
+    {
+        id: 1,
+        name: "Amina Khoury",
+        role: "Anxiety Recovery",
+        initials: "AK",
+        color: "#2ab8a0",
+        text: "I came to SanaMind during the hardest period of my life. Within two weeks of online sessions with my doctor, I had tools I never knew existed. I sleep through the night now. I laugh again. This platform gave me my life back.",
+        rating: 5
+    },
+    {
+        id: 2,
+        name: "Marcus Thompson",
+        role: "Burnout Recovery",
+        initials: "MT",
+        color: "#0b1f3a",
+        text: "As a surgeon, I thought asking for help was weakness. SanaMind's discreet, professional environment changed that. My counsellor helped me see that caring for myself is part of caring for others.",
+        rating: 5
+    },
+    {
+        id: 3,
+        name: "Leila Okonkwo",
+        role: "Family Therapy",
+        initials: "LO",
+        color: "#1e3f6e",
+        text: "Our family went through the family therapy programme together. What I thought would be awkward turned out to be the most connecting, healing experience we've had. Highly recommend for any family facing challenges.",
+        rating: 5
+    }
+];
+
+// ─── FAQ ─────────────────────────────────────────────────────────────
+export const faqs = [
+    { q: "How do online consultations work?", a: "Once you book a session, you'll receive a secure video link. Join from any device — no app needed. Sessions are private, encrypted, and feel just like an in-person appointment." },
+    { q: "Is my personal information safe?", a: "Absolutely. SanaMind uses end-to-end encryption for all communications. Your medical information is stored securely and never shared without your explicit consent." },
+    { q: "How do I choose the right doctor?", a: "Use our search and filter tools to find professionals by speciality, language, availability, and rating. Read profiles and testimonials, then book a free 15-minute intro call before committing." },
+    { q: "Can whole families join sessions?", a: "Yes. Our video consultation platform supports multi-participant sessions, making it ideal for family therapy, couples counselling, and group wellness sessions." },
+    { q: "What if I need help outside session hours?", a: "Our AI wellness assistant is available 24/7 to guide you, provide coping techniques, and escalate to a professional if needed. You are never truly alone on SanaMind." },
+];
+
+export const specialties = [
+    "All Specialties",
+    "Mental Health",
+    "Trauma Support",
+    "Stress Counseling",
+    "Family Therapy",
+    "Child Specialists",
+    "Teen Specialists",
+    "Elderly Care",
+    "General Health",
+    "Nutrition",
+    "Wellness Coaching"
+];
+
+export const motivationalMessages = [
+    "Healing starts with one honest conversation.",
+    "You deserve to feel well — today and every day.",
+    "Small steps taken consistently lead to profound change.",
+    "Asking for support is one of the bravest things you can do.",
+    "Your mental health is just as important as your physical health.",
+    "Together, we can overcome any challenge.",
+    "You are not alone on this journey.",
+    "Every day is a new opportunity to prioritise yourself.",
+]; 
