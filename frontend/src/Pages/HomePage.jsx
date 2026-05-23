@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import { stats, testimonials, faqs, motivationalMessages, wellnessTips, doctors } from '../data/mockData';
+import { stats, testimonials, faqs, motivationalMessages, wellnessTips } from '../data/mockData';
 
 /* ── tiny reusable counter hook ── */
 function useCountUp(target, duration = 1600, start = false) {
@@ -22,7 +22,7 @@ function useCountUp(target, duration = 1600, start = false) {
 
 function StatCard({ stat, started }) {
     const num = useCountUp(stat.value, 1600, started);
-    const suffix = stat.value.replace(/[\d,]/g, '');
+
     return (
         <div style={{
             textAlign: 'center', padding: '36px 24px',
@@ -74,7 +74,7 @@ function FAQItem({ q, a }) {
     );
 }
 
-export default function HomePage({ navigate, isLoggedIn }) {
+export default function HomePage({ navigate}) {
     const [msgIndex, setMsgIndex] = useState(0);
     const [statsStarted, setStatsStarted] = useState(false);
     const statsRef = useRef(null);

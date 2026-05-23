@@ -70,13 +70,18 @@ export default function App() {
       case 'chat':
         return <ChatPage navigate={navigate} />;
       case 'dashboard':
+        // Safe check: Renders LoginPage directly without triggering a route-state loop
         return isLoggedIn
           ? <DashboardPage navigate={navigate} user={user} onLogout={handleLogout} />
-          : (() => { navigate('login'); return null; })();
+          : <LoginPage navigate={navigate} onLogin={handleLogin} />;
       case 'login':
-        return <LoginPage navigate={navigate} onLogin={handleLogin} />;
+        return isLoggedIn
+          ? <HomePage navigate={navigate} isLoggedIn={isLoggedIn} user={user} />
+          : <LoginPage navigate={navigate} onLogin={handleLogin} />;
       case 'signup':
-        return <SignupPage navigate={navigate} onLogin={handleLogin} />;
+        return isLoggedIn
+          ? <HomePage navigate={navigate} isLoggedIn={isLoggedIn} user={user} />
+          : <SignupPage navigate={navigate} onLogin={handleLogin} />;
       default:
         return <HomePage navigate={navigate} isLoggedIn={isLoggedIn} user={user} />;
     }

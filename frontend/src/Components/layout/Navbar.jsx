@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
-export default function Navbar({ page, navigate, isLoggedIn, user, onLogout }) {
+export default function Navbar({ page, navigate, isLoggedIn, user }) {
     const [scrolled, setScrolled] = useState(false);
     const [mobileOpen, setMobileOpen] = useState(false);
     const [notifOpen, setNotifOpen] = useState(false);

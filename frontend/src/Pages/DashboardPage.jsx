@@ -3,7 +3,7 @@ import { doctors } from '../data/mockData';
 
 export default function DashboardPage({ navigate, user, onLogout }) {
     const [activeTab, setActiveTab] = useState('overview');
-    const [editMode, setEditMode] = useState(false);
+    const [, setEditMode] = useState(false);
     const [profile, setProfile] = useState({
         name: user?.name || 'Alex Johnson',
         email: user?.email || 'alex@example.com',

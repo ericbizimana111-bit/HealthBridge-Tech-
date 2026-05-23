@@ -12,7 +12,7 @@ const INITIAL = {
     ],
 };
 
-export default function ChatPage({ navigate }) {
+export default function ChatPage() {
     const [activeChat, setActiveChat] = useState(1);
     const [messages, setMessages] = useState(INITIAL);
     const [input, setInput] = useState('');

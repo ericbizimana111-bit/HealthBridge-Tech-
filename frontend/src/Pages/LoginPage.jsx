@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 
 export default function LoginPage({ navigate, onLogin }) {
@@ -47,7 +48,9 @@ export default function LoginPage({ navigate, onLogin }) {
         '"Healing is not linear, but every step counts."',
         '"You deserve support, care, and peace of mind."',
     ];
-    const [msgIdx] = useState(() => Math.floor(Math.random() * messages.length));
+
+    const [msgIdx] = useState(0);
+
 
 
     return (

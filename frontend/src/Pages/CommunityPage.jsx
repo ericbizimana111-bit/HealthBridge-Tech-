@@ -3,7 +3,7 @@ import { communityPosts } from '../data/mockData';
 
 const CATS = ['All', 'Inspiration', 'Support', 'Wellness', 'Discussion'];
 
-export default function CommunityPage({ navigate }) {
+export default function CommunityPage() {
     const [posts, setPosts] = useState(communityPosts);
     const [activeCategory, setActiveCategory] = useState('All');
     const [composing, setComposing] = useState(false);

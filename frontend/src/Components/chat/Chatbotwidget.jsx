@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect } from 'react';
 
 const INITIAL_MESSAGES = [
     {
@@ -45,7 +45,7 @@ function getBotResponse(input) {
     return "I'm here for you. 🌿 You can ask me to find a doctor, share wellness tips, explain how the platform works, or just listen. What do you need most right now?";
 }
 
-export default function ChatbotWidget({ navigate }) {
+export default function ChatbotWidget() {
     const [open, setOpen] = useState(false);
     const [messages, setMessages] = useState(INITIAL_MESSAGES);
     const [input, setInput] = useState('');
@@ -65,11 +65,13 @@ export default function ChatbotWidget({ navigate }) {
         setInput('');
         setMessages(prev => [...prev, { from: 'user', text: msg }]);
         setTyping(true);
+        const BOT_DELAY = 1200;
+
         setTimeout(() => {
             setTyping(false);
             const response = getBotResponse(msg);
             setMessages(prev => [...prev, { from: 'bot', text: response }]);
-        }, 900 + Math.random() * 600);
+        }, BOT_DELAY);
     };
 
     const handleKey = (e) => {
