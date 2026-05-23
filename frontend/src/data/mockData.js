@@ -295,4 +295,4 @@ export const motivationalMessages = [
     "Together, we can overcome any challenge.",
     "You are not alone on this journey.",
     "Every day is a new opportunity to prioritise yourself.",
-]; 
+];
