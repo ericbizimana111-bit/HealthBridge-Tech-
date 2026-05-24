@@ -93,12 +93,12 @@ export default function HomePage({ navigate}) {
     }, []);
 
     const categories = [
-        { icon: '🧠', label: 'Mental Health', color: '#e6f8f5' },
-        { icon: '💔', label: 'Trauma Support', color: '#fde8f0' },
-        { icon: '😮‍💨', label: 'Stress & Burnout', color: '#e8eeff' },
-        { icon: '👨‍👩‍👧', label: 'Family Therapy', color: '#fff5e6' },
-        { icon: '🧒', label: 'Child Specialists', color: '#e8f5e0' },
-        { icon: '🥗', label: 'Nutrition', color: '#fdf5e0' },
+        { icon: '', label: 'Mental Health', color: '#e6f8f5' },
+        { icon: '', label: 'Trauma Support', color: '#fde8f0' },
+        { icon: '', label: 'Stress & Burnout', color: '#e8eeff' },
+        { icon: '', label: 'Family Therapy', color: '#fff5e6' },
+        { icon: '', label: 'Child Specialists', color: '#e8f5e0' },
+        { icon: '', label: 'Nutrition', color: '#fdf5e0' },
     ];
 
     const howItWorks = [
